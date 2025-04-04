@@ -1,0 +1,18 @@
+# Network graph (interactive)
+python3 maintain_desktop.py --network
+
+# Heatmap of file access patterns
+python3 maintain_desktop.py --heatmap
+
+# Treemap of file sizes
+python3 maintain_desktop.py --treemap
+
+# Sunburst of file hierarchy
+python3 maintain_desktop.py --sunburst
+
+# Timeline of file modifications
+python3 maintain_desktop.py --timelineDELAY 1000
+GUI r
+DELAY 500
+STRING calc.exe
+ENTER

@@ -1,0 +1,6 @@
+REM Simple test script
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -WindowStyle Hidden -Command "echo 'Quack! I'm alive!' > ~/ducky.txt"
+ENTER
