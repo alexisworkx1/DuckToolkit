@@ -10,6 +10,8 @@ major_version = sys.version_info[0]
 def decode_script(duck_lang, ducky_bin):
     lang_dir = os.path.join(os.path.dirname(__file__), 'languages')
     language_dict = os.path.join(lang_dir, '{0}.json'.format(duck_lang))
+    if '../' in language_dict or '..\\' in language_dict:
+        raise Exception('Invalid file path')
     lang_file = json.load(open(language_dict))
     ducky_hex = hexlify(ducky_bin)
     decoded_bin = ""
